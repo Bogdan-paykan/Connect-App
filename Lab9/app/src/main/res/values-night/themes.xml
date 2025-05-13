@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Lab9Гребенюк" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/m3_primary_dark</item>
+        <item name="colorOnPrimary">@color/m3_on_primary_dark</item>
+        <item name="colorSecondary">#0521AB</item> <item name="colorOnSecondary">@color/teal_700</item> <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="colorSurface">@color/m3_surface_dark</item>
+        <item name="colorOnSurface">@color/m3_on_surface_dark</item>
+        <item name="android:colorBackground">@color/m3_background_dark</item>
+        <item name="colorOnBackground">@color/m3_on_background_dark</item>
+        <item name="colorError">@color/m3_error_dark</item>
+        <item name="colorOnError">@color/m3_on_error_dark</item>
+
+        <item name="colorPrimaryContainer">@color/m3_primary_container_dark</item>
+        <item name="colorOnPrimaryContainer">@color/m3_on_primary_container_dark</item>
+        <item name="colorSecondaryContainer">@color/m3_secondary_container_dark</item>
+        <item name="colorOnSecondaryContainer">@color/m3_on_secondary_container_dark</item>
+        <item name="colorTertiary">@color/m3_tertiary_dark</item>
+        <item name="colorOnTertiary">@color/m3_on_tertiary_dark</item>
+        <item name="colorTertiaryContainer">@color/m3_tertiary_container_dark</item>
+        <item name="colorErrorContainer">@color/m3_error_container_dark</item>
+        <item name="colorOnErrorContainer">@color/m3_on_error_container_dark</item>
+        <item name="colorSurfaceVariant">@color/m3_surface_variant_dark</item>
+        <item name="colorOnSurfaceVariant">@color/m3_on_surface_variant_dark</item>
+        <item name="colorOutline">@color/m3_outline_dark</item>
+    </style>
+
+    <style name="Theme.Lab9Гребенюк" parent="Base.Theme.Lab9Гребенюк" />
+</resources>

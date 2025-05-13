@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/colorSurface"
+    tools:context=".ChatFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Надіслати повідомлення"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:textColor="?attr/colorOnSurface"/>
+
+    <TextView
+        android:id="@+id/textViewSenderEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Завантаження..."
+        android:textSize="16sp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextRecipientEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пошта отримувача"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textColorHint="?android:attr/textColorHint"
+        android:background="@null"/>
+    <EditText
+        android:id="@+id/editTextGroupNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Номер групи (до 7 символів)"
+        android:inputType="textCapCharacters|textNoSuggestions"
+        android:maxLength="7"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textColorHint="?android:attr/textColorHint"
+        android:background="@null"/>
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:background="@null"
+        android:gravity="top|start"
+        android:hint="Введіть ваше повідомлення"
+        android:inputType="textMultiLine|textCapSentences"
+        android:padding="8dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textColorHint="?android:attr/textColorHint"
+        tools:ignore="LabelFor" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSend"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Надіслати" />
+
+        <Button
+            android:id="@+id/buttonShowHistory"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Історія" />
+    </LinearLayout>
+
+</LinearLayout>

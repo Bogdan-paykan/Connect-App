@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:background="?attr/colorSurface"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/contact_avatar_imageview"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_contact_placeholder" />
+
+    <CheckBox
+        android:id="@+id/contact_delete_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="8dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/contact_action_button"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="43dp"
+        android:minWidth="0dp"
+        android:minHeight="48dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="Деталі"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:icon="@android:drawable/ic_menu_info_details"
+        app:iconGravity="textStart"
+        app:iconPadding="4dp"
+        app:iconTint="?attr/colorPrimary"
+        app:strokeColor="?attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/contact_name_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/contact_avatar_imageview"
+        android:layout_toStartOf="@id/contact_action_button"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Ім'я Прізвище"
+        android:textSize="18sp"
+        android:textColor="?attr/colorOnSurface"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+</RelativeLayout>

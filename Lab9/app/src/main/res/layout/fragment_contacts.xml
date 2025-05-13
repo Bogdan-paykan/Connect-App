@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/android:colorBackground"
+    tools:context=".ContactsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/contacts_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Мої Контакти"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageButton
+            android:id="@+id/button_delete_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@android:drawable/ic_menu_delete"
+            app:tint="?attr/colorOnSurfaceVariant"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Видалити контакти"
+            android:layout_toStartOf="@id/button_add_contact"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"/>
+
+
+        <ImageButton
+            android:id="@+id/button_add_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@android:drawable/ic_input_add"
+            app:tint="?attr/colorPrimary"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Додати контакт"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/contacts_list_view_in_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="?attr/colorOutline"
+        android:dividerHeight="1dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"/>
+</LinearLayout>
